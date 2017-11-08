@@ -8,7 +8,8 @@ from django.contrib import admin
 from form_lobby import views
 
 urlpatterns = [
-    url(r'^$', views.home, name='home'),
+    url(r'^$', views.lobby, name='lobby'),
+    url(r'^gracias/', views.gracias, name='gracias'),
     url(r'^djmanager/', admin.site.urls),
 ]
 

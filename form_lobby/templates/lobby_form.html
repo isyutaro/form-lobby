@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="col-md-12">
+        <div class="intro">
+           <h1>Registro de Visitas</h1> 
+           <p>Favor de registrarse</p>
+        </div>
+    </div>
+
+    <form action="/" method="post">
+    	{% csrf_token %}
+    	{{ form }}
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
