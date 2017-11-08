@@ -1,0 +1,158 @@
+[hidden][style="display: block;"] {
+  display: block !important;
+}
+
+@font-face {
+  font-family: 'Louis-condensed';
+  src: url('../fonts/LouisGlobal2-CondensedReg.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/LouisGlobal2-CondensedReg.woff') format('woff'), url('../fonts/LouisGlobal2-CondensedReg.ttf')  format('truetype'),
+       url('../fonts/LouisGlobal2-CondensedReg.svg#LouisGlobal2-CondensedReg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General */
+a{
+    color: inherit;
+    text-decoration: underline;
+}
+body{
+    font-family: 'Louis-condensed';
+    color: #69c;
+}
+form > div{
+	padding: 7px 0;
+}
+
+header{
+  margin-bottom: 10px;
+  background: -moz-linear-gradient(0deg, #CCCCCC 0%, #CCCCCC 50%, #D3D4D5 51%, #D3D4D5 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #CCCCCC), color-stop(50%, #CCCCCC), color-stop(51%, #D3D4D5), color-stop(100%, #D3D4D5)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, #CCCCCC 0%, #CCCCCC 50%, #D3D4D5 51%, #D3D4D5 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, #CCCCCC 0%, #CCCCCC 50%, #D3D4D5 51%, #D3D4D5 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(0deg, #CCCCCC 0%, #CCCCCC 50%, #D3D4D5 51%, #D3D4D5 100%); /* ie10+ */
+  background: linear-gradient(90deg, #CCCCCC 0%, #CCCCCC 50%, #D3D4D5 51%, #D3D4D5 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCCCC', endColorstr='#D3D4D5',GradientType=1 ); /* ie6-9 */   
+}
+header .fondo{
+  height: 20px;
+  text-align: right;
+  padding-right: 15px;
+  color: white;
+  font-size: 19px;
+  background-color: #114d7d;
+  background: linear-gradient(left,#114d7d 5%,#58bae9 50%,#58bae9 80%);
+  background: -o-linear-gradient(left,#114d7d 5%,#58bae9 50%,#58bae9 80%);
+  background: -ms-linear-gradient(left,#114d7d 5%,#58bae9 50%,#58bae9 80%);
+  background: -moz-linear-gradient(left,#114d7d 5%,#58bae9 50%,#58bae9 80%);
+  background: -webkit-linear-gradient(left,#114d7d 5%,#58bae9 50%,#58bae9 80%);
+  background: -webkit-gradient(linear,left top,right top,color-stop(5%,#114d7d),color-stop(50%,#58bae9),color-stop(80%,#58bae9));
+}
+header .logos{
+    position: relative;
+    height: 80px;
+}
+header .logos a {
+    position: absolute;
+    top: 6px;
+}
+header .logos a:nth-child(1) {
+  left: 1%;
+}
+header .logos a:nth-child(2) {
+  right: 1%;
+}
+
+header .fondo > a{
+  text-decoration: none;
+}
+form {
+    padding: 10px 15px 10px;
+}
+form h3{
+  padding-left: 10px;
+  background-color: #2C5076;
+  color: #fff;
+}
+
+.legals {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 17px;
+}
+.legals b{
+    color: red;
+}
+.container h1{
+  text-align: center;
+  font-size: 3em;
+}
+.main{
+    background-clip: padding-box;
+    margin: 0 auto;
+    max-width: 1156px;
+    font-size: 17px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+
+}
+.intro h2{
+  font-size: 2em;
+}
+.intro p {
+    font-size: 18px;
+    color: #000;
+}
+.intro p:nth-child(3) {
+  text-align: center;
+  font-size: 23px;
+}
+.intro img {
+   margin: 0 auto;
+   width: 65%;
+}
+.main .closing{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    position: relative;
+    bottom: 0;
+}
+.main .closing div:nth-child(2){
+    align-self: flex-start;
+}
+.main .closing div img{
+    width: 100%;
+}
+.boton-custom {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    background-color: #2C5076;
+    color: #fff;
+}
+.boton-custom:hover {
+  background-color: #69c;
+  color: #f5f5f5 !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s lease-in-out;
+}
+span.error{
+    font-style: italic;
+    margin-bottom: 0.2em;
+    font-size: 0.8em;
+    display: table;
+    color: #d92722;
+}
+
+/* Page: thank you */
+.thanks{
+    text-align: center;
+    min-height: 300px;
+}
+.thanks p{
+  font-size: 15px;
+}
+
