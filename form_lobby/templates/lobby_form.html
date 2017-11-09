@@ -10,30 +10,25 @@
 
      <form action="/" method="post">
         {% csrf_token %}
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="{{ form.nombre.id_for_label }}" placeholder="Nombre" required>
-            </div>
-            <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="{{ form.apellido.id_for_label }}" placeholder="Apellido">
-            </div>
+        <div class="form-group">
+                <input type="text" class="form-control" name="{{ form.nombre.name }}" id="{{ form.nombre.id_for_label }}" placeholder="Nombre" required maxlength="100">
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-12">
-                <input type="text" class="form-control" id="{{ form.empresa.id_for_label }}" placeholder="Empresa" required>
-            </div>
+        <div class="form-group">
+                <input type="text" class="form-control" name="{{ form.apellido.name }}" id="{{ form.apellido.id_for_label }}" placeholder="Apellido" maxlength="100">
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <input type="email" class="form-control" id="{{ form.email.id_for_label }}" placeholder="email" required>
+        <div class="form-group">
+                <input type="text" class="form-control" name="{{ form.empresa.name }}" id="{{ form.empresa.id_for_label }}" placeholder="Empresa" required maxlength="100">
+        </div>
+        <div class="form-group">
+                <input type="email" class="form-control" name="{{ form.email.name }}" id="{{ form.email.id_for_label }}" placeholder="email" required maxlength="100">
             </div>
-            <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="{{ form.telefono.id_for_label }}" placeholder="Teléfono" required>
+        <div class="form-group">
+                <input type="number" class="form-control" name="{{ form.telefono.name }}" id="{{ form.telefono.id_for_label }}" placeholder="Teléfono" required maxlength="10">
             </div>
         </div>
         <div class="form-row">
                 <button type="submit" class="btn btn-primary btn-sm btn-block">Registrar</button>
         </div>
-     </form>
+    </form>
 
 {% endblock %}
