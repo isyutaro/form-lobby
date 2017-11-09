@@ -19,9 +19,6 @@ body{
     font-family: 'Louis-condensed';
     color: #69c;
 }
-form > div{
-	padding: 7px 0;
-}
 
 header{
   margin-bottom: 10px;
@@ -64,14 +61,6 @@ header .logos a:nth-child(2) {
 
 header .fondo > a{
   text-decoration: none;
-}
-form {
-    padding: 10px 15px 10px;
-}
-form h3{
-  padding-left: 10px;
-  background-color: #2C5076;
-  color: #fff;
 }
 
 .legals {

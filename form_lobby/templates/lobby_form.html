@@ -5,29 +5,42 @@
     <div class="col-md-12">
         <div class="intro">
            <h1>Registro de Visitas</h1> 
-           <p>Favor de registrarse</p>
         </div>
     </div>
 
      <form action="/" method="post">
-     	{% csrf_token %}
-     	<div class="form-group row">
-     		<label for="{{ form.nombre.id_for_label }}" class="col-sm-2 col-form-label">Nombre</label>
-     		<div class="col-sm-10">
-     			<input type="text" class="form-control" id="{{ form.nombre.id_for_label }}" placeholder="Nombre">
-     		</div>
-     	</div>
-     	<div class="form-group row">
-     		<label for="{{ form.empresa.id_for_label }}" class="col-sm-2 col-form-label">Empresa</label>
-     		<div class="col-sm-10">
-     			<input type="text" class="form-control" id="{{ form.empresa.id_for_label }}" placeholder="Empresa">
-     		</div>
-     	</div>
-     	<div class="form-group row">
-     		<div class="col-sm-10">
-     			<button type="submit" class="btn btn-primary">Registrar</button>
-     		</div>
-     	</div>
+        {% csrf_token %}
+        <div class="form-group row">
+            <label for="{{ form.nombre.id_for_label }}" class="col-sm-1 col-form-label">Nombre</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="{{ form.nombre.id_for_label }}" placeholder="Nombre">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="{{ form.apellido.id_for_label }}" class="col-sm-1 col-form-label">Apellido</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="{{ form.apellido.id_for_label }}" placeholder="Apellido">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="{{ form.empresa.id_for_label }}" class="col-sm-1 col-form-label">Empresa</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="{{ form.empresa.id_for_label }}" placeholder="Empresa">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="{{ form.email.id_for_label }}" class="col-sm-1 col-form-label">email</label>
+            <div class="col-sm-11">
+                <input type="email" class="form-control" id="{{ form.email.id_for_label }}" placeholder="email">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="{{ form.telefono.id_for_label }}" class="col-sm-1 col-form-label">Teléfono</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="{{ form.telefono.id_for_label }}" placeholder="Teléfono">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm btn-block">Registrar</button>
      </form>
 
 {% endblock %}
